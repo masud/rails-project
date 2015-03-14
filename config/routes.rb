@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :microposts
-
+  root 'users#index'
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -58,5 +58,5 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  root 'application#hello'
+  # root 'application#hello'
 end
